@@ -25,8 +25,8 @@ description = "Ubuntu bionic base image with buildpacks for Java, .NET Core, Nod
   version = "5.6.3"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/python:2.12.0"
-  version = "2.12.0"
+  uri = " harbor-preprod.blackrock.com/data-ops-engineering/chapters/devops-engineering/python-buildpack:1.0.0-debian-bullseye"
+  version = "1.0.0"
 
 [[buildpacks]]
   uri = "docker://gcr.io/paketo-buildpacks/ruby:0.37.0"
@@ -64,8 +64,8 @@ description = "Ubuntu bionic base image with buildpacks for Java, .NET Core, Nod
 [[order]]
 
   [[order.group]]
-    id = "paketo-buildpacks/python"
-    version = "2.12.0"
+    id = "buildpack/python"
+    version = "1.0.0"
 
 [[order]]
 
